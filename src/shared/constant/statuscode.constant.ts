@@ -1,0 +1,13 @@
+
+export enum StatusCodes {
+    SUCCESS = 200,
+    CREATED = 201,
+    BADREQUEST = 400,
+    UNAUTHORISED = 401,
+    FORBIDDEN = 403,
+    NOTFOUND = 404,
+    NOTALLOWED = 405,
+    CONFLICT = 409,
+    SERVERERROR = 500,
+    QUERYERROR = 503
+}

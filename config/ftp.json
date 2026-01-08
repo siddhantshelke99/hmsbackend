@@ -1,0 +1,8 @@
+{
+    "ftp": {
+        "ednpoint": "103.249.242.123",
+        "port": 21,
+        "username": "test",
+        "password": "test@123"
+    }
+}

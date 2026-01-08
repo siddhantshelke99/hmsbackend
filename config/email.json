@@ -1,0 +1,10 @@
+{
+  "email": {
+    "host": "email-smtp.ap-south-1.amazonaws.com",
+    "username": "AKIAZ5UK3DMES6INHWO3",
+    "password": "BADqyRXkDz1Iso/0sQOvG88X8NhakPckvEDNkjm0IpI+",
+    "port": 587,
+    "ssl": true,
+    "tls": false
+  }
+}
