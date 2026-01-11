@@ -6,6 +6,8 @@ import { AuthController } from '../controllers/auth/authentication.controller';
 // 1. Import your new separate route file
 import { OpdRoutes } from './main/opd.routes'; 
 import { DepartmentRoutes } from './masters/deparment.routes';
+
+import { PatientsRoutes } from './features/patients.routes';
 export class ApiRoutes extends BaseRoute {
 
     public router = express.Router();
@@ -14,6 +16,9 @@ export class ApiRoutes extends BaseRoute {
     // 2. Initialize the separate OpdRoutes class
     private opdRoutes: OpdRoutes = new OpdRoutes();
     private departmentRoutes: DepartmentRoutes = new DepartmentRoutes();
+
+
+    public patientsRoutes: PatientsRoutes = new PatientsRoutes();
     constructor() {
         super();
         dotenv.config();
@@ -31,6 +36,9 @@ export class ApiRoutes extends BaseRoute {
         // Mount the OPD router
         this.router.use('/', this.opdRoutes.router); 
         this.router.use('/', this.departmentRoutes.router);
+
+        this.router.use('/', this.patientsRoutes.router);
+
     }
 
 
